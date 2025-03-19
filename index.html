@@ -1,44 +1,95 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang="fr">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Portfolio</title>
-    <link rel='stylesheet' href='styles.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Abdelaziz CHAARAOUI</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div class='presentation'>
+<section id="presentation" class="presentation">
     <h1>Abdelaziz CHAARAOUI</h1>
-    <p>Je suis étudiant en BUT informatique à l'IUT de Vélizy</p>
-</div>
+    <p>Étudiant en BUT informatique à l'IUT de Vélizy</p>
+</section>
 
-<div class='sommaire'>
-    <h1>Parcourir</h1>
-    <form id='choixForm' method="post" action="process.php">
-        <select id='choix' name='choix'>
-            <option value='' disabled selected>Choisissez une option</option>
-            <option value='1'>Formations</option>
-            <option value='2'>Technologies</option>
-            <option value='3'>Projets</option>
-        </select>
-        <input type='submit' value='Valider'>
-    </form>
-</div>
+<section id="competences" class="competences">
+    <h2>Compétences</h2>
+    <div class="skills">
+        <div class="skill">
+            <img src="images/html-5-svgrepo-com.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="skill">
+            <img src="images/css-3-svgrepo-com.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <img src="images/js-svgrepo-com.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="images/php-svgrepo-com.png" alt="PHP">
+            <p>PHP</p>
+        </div>
+        <div class="skill">
+            <img src="images/python-svgrepo-com.png" alt="Python">
+            <p>Python</p>
+        </div>
+        <div class="skill">
+            <img src="images/flask-svgrepo-com.png" alt="Flask">
+            <p>Flask</p>
+        </div>
+        <div class="skill">
+            <img src="images/postgresql-svgrepo-com.png" alt="PostgreSQL">
+            <p>PostgreSQL</p>
+        </div>
+        <div class="skill">
+            <img src="images/java-svgrepo-com.png" alt="Java">
+            <p>Java</p>
+        </div>
+    </div>
+</section>
 
-<div id='content'></div>
+<section id="projets" class="projets">
+    <h2>Projets</h2>
+    <div class="project">
+        <h3>Plateforme Web de Calculs de Probabilités et Cryptographie</h3>
+        <a href="https://github.com/RayanSUK/SAE_DEV_APP" target="_blank">Lien vers le projet</a>
+        <p>Cette plateforme web, hébergée sur un Raspberry Pi de l'IUT, permet aux utilisateurs d’effectuer des calculs de probabilités et de tester des algorithmes de cryptographie.</p>
+    </div>
+    <div class="project">
+        <h3>Archilog</h3>
+        <a href="https://github.com/abdmnhjs/Archilog" target="_blank">Lien vers le projet</a>
+        <p>Application de gestion de budget permettant aux utilisateurs d’enregistrer, de modifier et d'exporter des transactions financières.</p>
+    </div>
+</section>
 
-<div class="contact">
-    <h1>Contact</h1>
+<section id="contact" class="contact">
+    <h2>Contact</h2>
     <a href="mailto:chaaraouiabdelaziz@gmail.com">M'envoyer un e-mail</a><br>
-    <a class='github' href='https://github.com/abdmnhjs' target='_blank'>Mon GitHub</a><br>
-    <a class='linkedin' href='https://www.linkedin.com/in/abdelaziz-chaaraoui-b211632aa/' target='_blank'>Mon LinkedIn</a><br>
+    <a href="https://github.com/abdmnhjs" target="_blank">Mon GitHub</a><br>
+    <a href="https://www.linkedin.com/in/abdelaziz-chaaraoui-b211632aa/" target="_blank">Mon LinkedIn</a><br>
     <p>Mon numéro de téléphone : +33 07 49 39 82 56</p>
-</div>
+</section>
 
-<script src='app.js'></script>
+<footer>
+    <p>&copy; 2023 Abdelaziz CHAARAOUI. Tous droits réservés.</p>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
