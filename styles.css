@@ -1,0 +1,122 @@
+.technologies-title,
+.projets-title,
+.formations h1,
+.formations img,
+.formations p,
+.etudes-title,
+.etudes-description,
+.projet-title,
+.projet-link,
+.projet-description {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.technologies-images img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.presentation {
+    text-align: center;
+}
+
+.sommaire {
+    text-align: center;
+}
+
+.technologies {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+h1, h3, .projet-link {
+    text-align: center;
+}
+
+h1,h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+p, a, input, select, li, ul {
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+.technologies-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.techs {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    margin-bottom: 5px;
+}
+
+.techs:hover {
+    transform: scale(1.1);
+}
+
+.formations {
+    margin-top: 50px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.uvsq {
+    width: 50%;
+    height: auto;
+}
+
+.projets {
+    margin-top: 50px;
+}
+
+.projet-link {
+    color: white;
+    text-decoration: none;
+}
+
+select, input {
+    background: #5ca3df; /* Couleur de fond initiale */
+    padding: 1%;
+    border: 1px solid white; /* Bordure blanche */
+    border-radius: 15px; /* Bordures arrondies */
+    transition: background-color 0.3s ease; /* Animation de transition pour la couleur de fond */
+}
+
+select:hover, input:hover {
+    background: #508dc0; /* Changement de la couleur de fond au survol */
+}
+
+
+
+.projet-link:hover {
+    text-decoration: underline;
+}
+
+.projet-description {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+body {
+    background: #508dc0;
+}
+
