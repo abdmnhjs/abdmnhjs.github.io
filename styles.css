@@ -105,8 +105,6 @@ select:hover, input:hover {
     background: #508dc0; /* Changement de la couleur de fond au survol */
 }
 
-
-
 .projet-link:hover {
     text-decoration: underline;
 }
@@ -119,4 +117,3 @@ select:hover, input:hover {
 body {
     background: #508dc0;
 }
-

@@ -11,4 +11,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }, delay);
         delay += 150;
     });
+
+    const choixForm = document.getElementById('choixForm');
+    choixForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const choix = document.getElementById('choix').value;
+        fetch('process.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `choix=${choix}`
+        })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('content').innerHTML = data.content;
+            })
+            .catch(error => console.error('Error:', error));
+    });
 });
